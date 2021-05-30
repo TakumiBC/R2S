@@ -1,0 +1,31 @@
+From 8c5462855dc4c599767c51cacce096103b91b17d Mon Sep 17 00:00:00 2001
+From: jensen <jensenhuang@friendlyarm.com>
+Date: Tue, 15 Dec 2020 18:05:06 +0800
+Subject: [PATCH] uboot-rockchip: update to v2020.10
+
+Signed-off-by: jensen <jensenhuang@friendlyarm.com>
+---
+ package/boot/uboot-rockchip/Makefile | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/package/boot/uboot-rockchip/Makefile b/package/boot/uboot-rockchip/Makefile
+index 944c942efc..74bb72be49 100644
+--- a/package/boot/uboot-rockchip/Makefile
++++ b/package/boot/uboot-rockchip/Makefile
+@@ -5,10 +5,10 @@
+ include $(TOPDIR)/rules.mk
+ include $(INCLUDE_DIR)/kernel.mk
+ 
+-PKG_VERSION:=2020.07
+-PKG_RELEASE:=3
++PKG_VERSION:=2020.10
++PKG_RELEASE:=1
+ 
+-PKG_HASH:=c1f5bf9ee6bb6e648edbf19ce2ca9452f614b08a9f886f1a566aa42e8cf05f6a
++PKG_HASH:=0d481bbdc05c0ee74908ec2f56a6daa53166cc6a78a0e4fac2ac5d025770a622
+ 
+ PKG_MAINTAINER:=Tobias Maedel <openwrt@tbspace.de>
+ 
+-- 
+2.25.1
+
