@@ -1,4 +1,4 @@
-name: Build NanoPi R2S RubikWrt Stable
+name: Build NanoPi R2S RubikWrt WAN&LAN Stable
 on:
   repository_dispatch:
   workflow_dispatch:
