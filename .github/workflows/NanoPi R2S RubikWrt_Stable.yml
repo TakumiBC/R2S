@@ -46,8 +46,8 @@ jobs:
     - name: Clone Source Code
       run: |
         df -hT $PWD
-        git config --global user.email "git@github.com"
-        git config --global user.name "GitHub"
+        git config user.name github-actions
+        git config user.email github-actions@github.com
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
         chmod +x ./target/linux/rockchip/armv8/base-files/etc/board.d/01_leds
