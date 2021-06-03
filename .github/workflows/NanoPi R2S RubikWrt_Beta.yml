@@ -234,11 +234,11 @@ jobs:
           [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
       - name: Upload firmware to release
         uses: softprops/action-gh-release@v1
-        if: github.repository == 'thomaswcy/R2S'
+        if: steps.tag.outputs.status == 'success' && !cancelled()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: ${{ steps.tag.outputs.release_date }} RubikWrt(Beta)
+          name: ${{ steps.tag.outputs.release_date }} Rubikrt (Stable WAN/LAN)
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
           files: ${{ env.FIRMWARE }}/*
