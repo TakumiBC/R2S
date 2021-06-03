@@ -7,7 +7,7 @@
 - 用户名：root
 - 密码：password
 -----------------------------------------------------
-固件内置了KoolProxyR，若想使用请先在`TYDD终端执行👇
+固件内置了KoolProxyR，若想使用请先在TYDD终端执行👇
 ```
 wget -4 -O /tmp/KoolProxyR_install.sh https://shaoxia1991.coding.net/p/koolproxyr/d/koolproxyr/git/raw/master/KoolProxyR_install.sh && chmod 777 /tmp/KoolProxyR_install.sh && sh /tmp/KoolProxyR_install.sh
 ```
