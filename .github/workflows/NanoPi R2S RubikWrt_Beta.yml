@@ -1,4 +1,4 @@
-name: Build NanoPi R2S FusionWrt Canary Beta
+name: Build NanoPi R2S RubikWrt Canary Beta
 on:
   workflow_dispatch:
   schedule:
