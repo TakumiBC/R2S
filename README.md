@@ -20,5 +20,5 @@ wget -4 -O /tmp/KoolProxyR_install.sh https://shaoxia1991.coding.net/p/koolproxy
 - Telegram频道：https://t.me/RubikWrt/
 
 ---------------------------------------------------------------------------------------
-捐贈
+捐赠作者
 - 爱发电：http://afdian.net/@thomaswcy
