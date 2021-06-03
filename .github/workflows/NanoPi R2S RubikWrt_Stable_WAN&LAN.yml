@@ -1,4 +1,4 @@
-name: Build NanoPi R2S RubikWrt WAN&LAN Stable
+name: Build NanoPi R2S RubikWrt WAN/LAN Stable
 on:
   workflow_dispatch:
   schedule:
@@ -46,8 +46,8 @@ jobs:
     - name: Clone Source Code
       run: |
         df -hT $PWD
-        git config user.name github-actions
-        git config user.email github-actions@github.com
+        git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+        git config --global user.name github-actions[bot]
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
         chmod +x ./target/linux/rockchip/armv8/base-files/etc/board.d/01_leds
