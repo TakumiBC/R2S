@@ -24,12 +24,17 @@ wget -4 -O /tmp/KoolProxyR_install.sh https://shaoxia1991.coding.net/p/koolproxy
 灰度测试功能 更新模块
 
 测试版固件更新（在TYDD终端输入👇并回车）
+```
 wget https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_beta.sh
+```
 稳定版固件更新（在TYDD终端输入👇并回车）
+```
 wget https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_stable.sh
+```
 互换版固件更新（在TYDD终端输入👇并回车）
+```
 wget https://raw.githubusercontent.com/thomaswcy/R4S/main/scripts/update_swap.sh
-
+```
 ---------------------------------------
 - Telegram群组：https://t.me/RubikWrtChat/
 - Telegram频道：https://t.me/RubikWrt/
