@@ -249,4 +249,4 @@ jobs:
       - name: WeChat notification
         if: env.SERVERCHAN_NOTIFICATION == 'true'
       run: |
-        [ steps.compile.outputs.status == 'success' ] && curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=🎉RubikWrt编译成功😋
+        [ steps.compile.outputs.status == 'success' ] && curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=🎉RubikWrt R2S Beta is Success😋
