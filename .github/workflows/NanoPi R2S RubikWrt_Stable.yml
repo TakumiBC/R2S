@@ -15,6 +15,7 @@ env:
   UPLOAD_WETRANSFER: true
   UPLOAD_COWTRANSFER: true
   UPLOAD_RELEASE: true
+  SERVERCHAN_NOTIFICATION: true
   TZ: Asia/Shanghai
 
 jobs:
@@ -242,9 +243,8 @@ jobs:
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
           files: ${{ env.FIRMWARE }}/*
-   
-      - name: Delete Artifacts
-        uses: geekyeggo/delete-artifact@v1
-        with:
-          name: |
-            bin-archive
+          
+      - name: WeChat notification
+        if: env.SERVERCHAN_NOTIFICATION == 'true'
+        run: |
+         [ steps.compile.outputs.status == 'success' ] && curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=🎉RubikWrt R2S Stable is Success😋
