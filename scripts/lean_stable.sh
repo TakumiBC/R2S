@@ -35,8 +35,7 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 
 # Add luci-app-adguardhome
-svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome
-svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome
+svn co https://github.com/Lienol/openwrt/tree/931d0789d200d7c58ca019c6a774a46bcd413c3d/package/diy/luci-app-adguardhome
 
 # Add luci-app-diskman
 git clone --depth=1 https://github.com/SuLingGG/luci-app-diskman
