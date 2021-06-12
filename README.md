@@ -5,6 +5,11 @@
 
 - Stable 稳定版：非常精简
 - Canary Beta 测试版：包含所有插件
+
+下载文件
+- openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz（推荐小白使用）
+- openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-ext4-sysupgrade.img.gz（推荐大佬使用）
+
 ------------------------------------------------------------
 默认编译
 
