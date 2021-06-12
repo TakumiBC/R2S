@@ -9,7 +9,9 @@
 下载文件
 - openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz（推荐小白使用）
 - openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-ext4-sysupgrade.img.gz（推荐大佬使用）
-
+请在解压后使用
+- MacOS请使用[Etcher](https://www.balena.io/etcher/)将固件写入TF卡
+- Windows请使用[Rufus](https://rufus.ie/)将固件写入TF卡
 ------------------------------------------------------------
 默认编译
 
