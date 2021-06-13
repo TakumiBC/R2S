@@ -16,8 +16,9 @@ git clone --depth=1 https://github.com/Lienol/openwrt-package
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
-# Add luci-app-koolproxyR
-git clone --depth=1 https://github.com/Beginner-Go/luci-app-koolproxyR
+# Add luci-app-godproxy(renamed as KoolProxyR Plus+)
+git clone --depth=1 https://github.com/project-lede/luci-app-godproxy
+find package/*/ feeds/*/ -maxdepth 6 -path "*luci-app-godproxy/luasrc/controller/koolproxy.lua" | xargs -i sed -i 's/\"KoolProxyR Plus+\")\,1/\"KoolProxyR Plus+\")\,10/g' {}
 
 # Add luci-app-bypass
 git clone --depth=1 https://github.com/garypang13/luci-app-bypass
@@ -38,7 +39,7 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 
 # Add luci-app-adguardhome
-svn co https://github.com/Lienol/openwrt/tree/931d0789d200d7c58ca019c6a774a46bcd413c3d/package/diy/luci-app-adguardhomesvn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome
+git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome
 
 # Add luci-app-diskman
 git clone --depth=1 https://github.com/SuLingGG/luci-app-diskman
