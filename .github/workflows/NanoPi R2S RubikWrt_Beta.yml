@@ -16,13 +16,11 @@ env:
   UPLOAD_WETRANSFER: true
   UPLOAD_COWTRANSFER: true
   UPLOAD_RELEASE: true
-  SERVERCHAN_NOTIFICATION: true
   TZ: Asia/Shanghai
 
 jobs:
   Build:
     runs-on: ubuntu-18.04
-    if: github.repository == 'thomaswcy/R2S'
     outputs:
       OPENWRTROOT: ${{ steps.update.outputs.OPENWRTROOT }}
       PLATFORM: ${{ steps.compile.outputs.PLATFORM }}
@@ -168,7 +166,6 @@ jobs:
   Upload:
     needs: [Build]
     runs-on: ubuntu-18.04
-    if: github.repository == 'thomaswcy/R2S'
     steps:
       - name: Checkout
         uses: actions/checkout@main
@@ -245,8 +242,3 @@ jobs:
           body_path: release.txt
           files: ${{ env.FIRMWARE }}/*
           prerelease: true
-
-      - name: WeChat notification
-        if: env.SERVERCHAN_NOTIFICATION == 'true'
-        run: |
-            curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=🎉RubikWrt R2S Beta is Success😋
