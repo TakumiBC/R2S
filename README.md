@@ -27,15 +27,15 @@
 
 测试版固件更新（在TYDD终端输入👇并回车）
 ```
-wget https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_beta.sh | sh
+wget -O - https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_beta.sh | bash
 ```
 稳定版固件更新（在TYDD终端输入👇并回车）
 ```
-wget https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_stable.sh | sh
+wget -O - https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_stable.sh | bash
 ```
 互换版固件更新（在TYDD终端输入👇并回车）
 ```
-wget https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_swap.sh | sh
+wget -O - https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_swap.sh | bash
 ```
 ---------------------------------------
 - Telegram群组：https://t.me/RubikWrtChat/
