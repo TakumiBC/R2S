@@ -1,6 +1,8 @@
 # NanoPi R2S RubikWrt
+捐赠作者
+- 爱发电：http://afdian.net/@thomaswcy/plan/
 - 下载地址：https://gihtub.com/thomaswcy/R2S/releases
-
+---------------------------------------------------------------------------------------
 版本区分
 
 - Stable 稳定版：非常精简
@@ -33,12 +35,8 @@ wget https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_stable.
 ```
 互换版固件更新（在TYDD终端输入👇并回车）
 ```
-wget https://raw.githubusercontent.com/thomaswcy/R4S/main/scripts/update_swap.sh
+wget https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_swap.sh | sh
 ```
 ---------------------------------------
 - Telegram群组：https://t.me/RubikWrtChat/
 - Telegram频道：https://t.me/RubikWrt/
-
----------------------------------------------------------------------------------------
-捐赠作者
-- 爱发电：http://afdian.net/@thomaswcy/plan/
