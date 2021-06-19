@@ -2,7 +2,7 @@
 捐赠作者
 - 爱发电：http://afdian.net/@thomaswcy/plan/
 ----------------------------------------------------------------------------------------
-- 下载地址：https://gihtub.com/thomaswcy/R2S/releases
+- 下载地址：https://github.com/thomaswcy/R2S/releases
 版本区分
 
 - Stable 稳定版：非常精简
