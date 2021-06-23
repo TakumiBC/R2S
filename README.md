@@ -1,6 +1,6 @@
 # NanoPi R2S RubikWrt
 机场推荐
-[Matrix](https://ap.hb48.tk//auth/register?code=JtoN)
+- [Matrix](https://ap.hb48.tk//auth/register?code=JtoN)
 ------------------
 - 爱发电：http://afdian.net/@thomaswcy/plan/
 ----------------------------------------------------------------------------------------
