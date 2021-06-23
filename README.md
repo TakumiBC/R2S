@@ -1,5 +1,7 @@
 # NanoPi R2S RubikWrt
-捐赠作者
+机场推荐
+[https://ap.hb48.tk//auth/register?code=JtoN](Matrix)
+------------------
 - 爱发电：http://afdian.net/@thomaswcy/plan/
 ----------------------------------------------------------------------------------------
 - 下载地址：https://github.com/thomaswcy/R2S/releases
