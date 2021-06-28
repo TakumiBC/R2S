@@ -3,8 +3,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 0 16 * * *
-  # watch:
-  #   types: started
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
@@ -52,7 +50,7 @@ jobs:
         chmod +x ./target/linux/rockchip/armv8/base-files/etc/board.d/01_leds
         chmod +x ./target/linux/rockchip/armv8/base-files/etc/board.d/02_network
         rm -rf ./package/kernel/mac80211
-        svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/mac80211 package/kernel/mac80211
+        svn co https://github.com/immortalwrt/immortalwrt/tree/master/package/kernel/mac80211 package/kernel/mac80211
         
     - name: Update Feeds
       id: update
