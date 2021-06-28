@@ -1,6 +1,8 @@
 # NanoPi R2S RubikWrt
-机场推荐
+## 机场推荐
 - [https://ap.hb48.tk/](https://ap.hb48.tk//auth/register?code=JtoN) Matrix
+使用体验
+非常好用，建议先开通一个月套餐试一试，然后包年
 ------------------
 - 爱发电：http://afdian.net/@thomaswcy/plan/
 ----------------------------------------------------------------------------------------
