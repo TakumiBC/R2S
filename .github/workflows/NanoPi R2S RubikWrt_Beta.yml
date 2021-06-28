@@ -3,9 +3,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 0 16 * * *
-  # watch:
-  #   types: started
-
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
