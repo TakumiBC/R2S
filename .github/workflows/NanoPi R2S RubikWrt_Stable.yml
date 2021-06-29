@@ -50,7 +50,7 @@ jobs:
         chmod +x ./target/linux/rockchip/armv8/base-files/etc/board.d/01_leds
         chmod +x ./target/linux/rockchip/armv8/base-files/etc/board.d/02_network
         rm -rf ./package/kernel/mac80211
-        svn co https://github.com/immortalwrt/immortalwrt/tree/master/package/kernel/mac80211 package/kernel/mac80211
+        svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/mac80211 package/kernel/mac80211
         
     - name: Update Feeds
       id: update
