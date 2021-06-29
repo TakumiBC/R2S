@@ -13,7 +13,7 @@
 - 爱发电：http://afdian.net/@thomaswcy/plan/
 ----------------------------------------------------------------------------------------
 - 下载地址：https://github.com/thomaswcy/R2S/releases
-版本区分
+- 版本区分
 
 - Stable 稳定版：非常精简
 - Canary Beta 测试版：包含所有插件
