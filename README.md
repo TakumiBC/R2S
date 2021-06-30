@@ -1,11 +1,11 @@
 # NanoPi R2S RubikWrt
 ## 友情推荐
-- MaTrix机场
-- 使用体验
+## MaTrix机场
+使用体验
 - 非常好用，建议先开通一个月套餐试一试，然后包年，点击下方链接购买
 - [https://ap.hb48.tk/](https://ap.hb48.tk//auth/register?code=JtoN)
-- 奈飞小铺
-- 使用体验
+## 奈飞小铺
+使用体验
 本人亲自使用多年，账号稳定可靠，价格合理，该商家还售YouTube Premium 和 Office 365 等产品，需要的可点击下方链接购买 
 - [https://naifei.shop/](https://nf.run/WfgAzX)
 
