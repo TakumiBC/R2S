@@ -16,7 +16,7 @@ git clone --depth=1 https://github.com/Lienol/openwrt-package
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
-# Add luci-app-godproxy(renamed as KoolProxyR Plus+)
+# Add luci-app-godproxy
 git clone --depth=1 https://github.com/project-lede/luci-app-godproxy
 find package/*/ feeds/*/ -maxdepth 6 -path "*luci-app-godproxy/luasrc/controller/koolproxy.lua" | xargs -i sed -i 's/\"KoolProxyR Plus+\")\,1/\"KoolProxyR Plus+\")\,10/g' {}
 
