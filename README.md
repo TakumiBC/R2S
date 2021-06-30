@@ -1,5 +1,4 @@
 # NanoPi R2S RubikWrt
-友情推荐
 ## MaTrix机场
 非常好用，建议先开通一个月套餐试一试，然后包年，点击下方链接购买
 - [https://ap.hb48.tk/](https://ap.hb48.tk//auth/register?code=JtoN)
