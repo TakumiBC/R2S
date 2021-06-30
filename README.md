@@ -13,11 +13,11 @@
 - 爱发电：http://afdian.net/@thomaswcy/plan/
 ----------------------------------------------------------------------------------------
 - 下载地址：https://github.com/thomaswcy/R2S/releases
+---------------------
 - 版本区分
-
-- Stable 稳定版：非常精简
-- Canary Beta 测试版：包含所有插件
-
+- Stable 稳定版：非常精简，互换网口
+- Canary Beta 测试版：包含所有插件，互换网口
+-------------------------------------------
 下载文件
 - openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz（推荐小白使用）
 - openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-ext4-sysupgrade.img.gz（推荐大佬使用）
