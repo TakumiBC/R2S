@@ -18,7 +18,12 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
 # Add luci-app-godproxy
 git clone --depth=1 https://github.com/project-lede/luci-app-godproxy
-find package/*/ feeds/*/ -maxdepth 6 -path "*luci-app-godproxy/luasrc/controller/koolproxy.lua" | xargs -i sed -i 's/\"KoolProxyR Plus+\")\,1/\"KoolProxyR Plus+\")\,10/g' {}
+sed -i 's/translate("GodProxy是基于KoolProxyR Plus+重新整理的能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！"))/translate("KoolProxyR Plus+是能识别AdBlock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！"))' luci-app-godproxy/luasrc/model/cbi/koolproxy/global.lua
+sed -i 's/msgstr "GodProxy滤广告"/msgstr "KoolProxy R Plus+"' luci-app-godproxy/po/zh-cn/koolproxy.po
+sed -i 's/translate("GodProxy滤广告  运行中")/msgstr "translate("KoolProxy R Plus+  运行中")"' luci-app-godproxy/luasrc/view/koolproxy/koolproxy_status.htm
+sed -i 's/translate("GodProxy滤广告")/msgstr "translate("KoolProxy R Plus+")' luci-app-godproxy/luasrc/model/cbi/koolproxy/rss_rule.lua
+sed -i 's/GodProxy滤广告  未运行/KoolProxy R Plus+  未运行' luci-app-godproxy/luasrc/model/cbi/koolproxy/rss_rule.lua
+sed -i 's/GodProxy滤广告  运行中/KoolProxy R Plus+  运中行' luci-app-godproxy/luasrc/model/cbi/koolproxy/rss_rule.lua
 
 # Add luci-app-bypass
 git clone --depth=1 https://github.com/garypang13/luci-app-bypass
@@ -153,7 +158,7 @@ sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='RubikWrt'' package/lean/default-settings/files/zzz-default-settings
-sed -i "s/RubikWrt /thomaswcy build $(TZ=UTC-8 date "+%Y.%m.%d") @ RubikWrt /g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/OpenWrt /thomaswcy build $(TZ=UTC-8 date "+%Y.%m.%d") @ RubikWrt /g" package/lean/default-settings/files/zzz-default-settings
 # sed -i "s/FILES:=$(LINUX_DIR)/net/can/can-dev.ko/FILES:=$(LINUX_DIR)/drivers/net/can/dev/can-dev.ko \ package/kernel/linux/modules/can.mk
 
 # Custom configs
