@@ -134,7 +134,7 @@ sed -i '/127.0.0.1 localhost/a 192.168.2.1 www1.rubikwrt.com' package/base-files
 
 # Custom configs
 echo -e " thomaswcy's RubikWrt built on "$(date +%Y.%m.%d)"\n -----------------------------------------------------" >> package/base-files/files/etc/banner
-
+sed -i 's/<tr><td width="33%"><%:CPU usage (%)%></td><td id="cpuusage">-</td></tr>/<tr><td width="33%" <%:特别鸣谢%></td><td><a href="https://ap.hb48.tk//auth/register?code=JtoN">MaTrix    <a href="https://nf.run/WfgAzX">奈飞小铺    <a href="https://www.youtube.com/c/BIGdongdong/featured">BIG东东 </a></td></tr>' package/lean/autocore/files/index.htm
 # Add CUPInfo
 pushd package/lean/autocore/files/arm/sbin
 cp -f $GITHUB_WORKSPACE/scripts/cpuinfo cpuinfo
