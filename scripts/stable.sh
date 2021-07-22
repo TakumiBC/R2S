@@ -165,6 +165,9 @@ sed -i "s/OpenWrt /thomaswcy build $(TZ=UTC-8 date "+%Y.%m.%d") @ RubikWrt /g" p
 # git am $GITHUB_WORKSPACE/patches/lean/*.patch
 echo -e " thomaswcy's RubikWrt built on "$(date +%Y.%m.%d)"\n -----------------------------------------------------" >> package/base-files/files/etc/banner
 sed -i 's/<tr><td width="33%"><%:CPU usage (%)%></td><td id="cpuusage">-</td></tr>/<tr><td width="33%" <%:特别鸣谢%></td><td><a href="https://ap.hb48.tk//auth/register?code=JtoN">MaTrix    <a href="https://nf.run/WfgAzX">奈飞小铺    <a href="https://www.youtube.com/c/BIGdongdong/featured">BIG东东 </a></td></tr>' package/lean/autocore/files/index.htm
+rm -rf banner
+wget https://raw.githubusercontent.com/thomaswcy/R2S/main/banner
+popd
 
 # Add CUPInfo
 pushd package/lean/autocore/files/arm/sbin
