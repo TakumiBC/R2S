@@ -10,7 +10,7 @@
  ```
 ## MaTrix机场
 非常好用，建议先开通一个月套餐试一试，然后包年，点击下方链接购买
-- [https://ap.hb48.tk/](https://ap.hb48.tk//auth/register?code=JtoN)
+- [https://ap.hb48.tk/](https://ap.hb48.tk//auth/register?code=41Vj)
 ## 奈飞小铺
 本人亲自使用多年，账号稳定可靠，价格合理，该商家还售YouTube Premium 和 Office 365 等产品，需要的可点击下方链接购买 
 - [https://naifei.shop/](https://nf.run/WfgAzX)
