@@ -221,6 +221,17 @@ jobs:
           ./transfer cow --block 2621440 -s -p 64 --no-progress ${FIRMWARE} 2>&1 | tee cowtransfer.log
           echo "::warning file=Firmware-Cowtransfer.com::$(cat cowtransfer.log | grep https)"
           echo "::set-output name=url::$(cat cowtransfer.log | grep https | cut -f3 -d" ")"
+      - name: Unzip Squashfs Firmware
+        run: |
+          cd ${FIRMWARE}
+          gzip -d openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-squashfs-sysupgrade.img.gz
+          rm -rf config.buildinfo
+          rm -rf openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-ext4-sysupgrade.img.gz
+          rm -rf openwrt-rockchip-armv8-friendlyarm_nanopi-r2s-rootfs.tar.gz
+          rm -rf openwrt-rockchip-armv8-friendlyarm_nanopi-r2s.manifest
+          rm -rf packages-server.zip
+          rm -rf sha256sums
+          
       - name: Generate release tag
         id: tag
         if: env.UPLOAD_RELEASE == 'true' && !cancelled()
