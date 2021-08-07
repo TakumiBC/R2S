@@ -63,7 +63,7 @@ sed -i 's/msgstr "GodProxy滤广告"/msgstr "KoolProxy R Plus+"' luci-app-godpro
 sed -i 's/translate("GodProxy滤广告  运行中")/msgstr "translate("KoolProxy R Plus+  运行中")"' luci-app-godproxy/luasrc/view/koolproxy/koolproxy_status.htm
 sed -i 's/translate("GodProxy滤广告")/msgstr "translate("KoolProxy R Plus+")' luci-app-godproxy/luasrc/model/cbi/koolproxy/rss_rule.lua
 sed -i 's/GodProxy滤广告  未运行/KoolProxy R Plus+  未运行' luci-app-godproxy/luasrc/model/cbi/koolproxy/rss_rule.lua
-sed -i 's/GodProxy滤广告  运行中/KoolProxy R Plus+  运中行' luci-app-godproxy/luasrc/model/cbi/koolproxy/rss_rule.lua
+sed -i 's/GodProxy滤广告  运行中/KoolProxy R Plus+  运行中' luci-app-godproxy/luasrc/model/cbi/koolproxy/rss_rule.lua
 
 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
@@ -133,6 +133,7 @@ sed -i "s/RubikWrt /thomaswcy build $(TZ=UTC-8 date "+%Y.%m.%d") @ RubikWrt /g" 
 sed -i '/127.0.0.1 localhost/a 192.168.2.1 www1.rubikwrt.com' package/base-files/files/etc/hosts
 
 # Custom configs
+git am $GITHUB_WORKSPACE/patches/*.patch
 echo -e " thomaswcy's RubikWrt built on "$(date +%Y.%m.%d)"\n -----------------------------------------------------" >> package/base-files/files/etc/banner
 sed -i '/Load Average/i\\t\t<tr><td width="33%"><%:特别鸣谢%> </td><td><a href="https://ap.hb48.tk//auth/register?code=JtoN">MaTrix    <a href="https://nf.run/WfgAzX">奈飞小铺    <a href="https://www.youtube.com/c/BIGdongdong/featured">BIG东东 </a></td></tr>' package/lean/autocore/files/index.htm
 pushd package/base-files/files/etc/banner
