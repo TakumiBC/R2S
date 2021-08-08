@@ -235,7 +235,6 @@ jobs:
 #          rm -rf openwrt-rockchip-armv8-friendlyarm_nanopi-r2s.manifest
 #          rm -rf packages-server.zip
 #          rm -rf sha256sums
-          rm -rf sha256sums
           
       - name: Generate release tag
         id: tag
