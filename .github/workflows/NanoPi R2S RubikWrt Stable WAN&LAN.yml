@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: 0 16 * * *
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: configs/lean/lean_stable.config
   DIY_SH: scripts/stable.sh
