@@ -38,21 +38,7 @@
 - 新增RubikWrt SSH登录界面 ascii
 - 修复diapatcher.lua:469登录界面报错
 
------------------------------------------
-更新模块
+----------------------------------
 
-测试版固件更新（在TYDD终端输入👇并回车）
-```
-wget -O - https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_beta.sh && sh update_beta.sh
-```
-稳定版固件更新（在TYDD终端输入👇并回车）
-```
-wget -O - https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_stable.sh && sh update_stable.sh
-```
-互换版固件更新（在TYDD终端输入👇并回车）
-```
-wget -O - https://raw.githubusercontent.com/thomaswcy/R2S/main/scripts/update_swap.sh && sh update_swap.sh
-```
----------------------------------------
 - Telegram群组：https://t.me/RubikWrtChat/
 - Telegram频道：https://t.me/RubikWrt/
