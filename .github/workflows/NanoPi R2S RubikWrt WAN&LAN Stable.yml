@@ -7,7 +7,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: configs/lean/lean_stable.config
-  DIY_SH: scripts/stable.sh
+  DIY_SH: scripts/build_stable.sh
   IPV6MOD_IN_FIRMWARE: true
   KMODS_IN_FIRMWARE: true
   UPLOAD_WETRANSFER: true
