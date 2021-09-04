@@ -55,6 +55,12 @@ jobs:
         chmod +x ./target/linux/rockchip/armv8/base-files/etc/board.d/02_network
         rm -rf ./package/kernel/mac80211
         svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/mac80211 package/kernel/mac80211
+ 
+    - name: Speed Up
+      uses: klever1988/cachewrtbuild@main
+      with:
+        ccache: 'true'
+        prefix: ${{ github.workspace }}/openwrt
         
     - name: Update Feeds
       id: update
