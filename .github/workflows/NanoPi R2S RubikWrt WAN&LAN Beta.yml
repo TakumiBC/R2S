@@ -52,6 +52,12 @@ jobs:
         cd openwrt
         chmod +x ./target/linux/rockchip/armv8/base-files/etc/board.d/01_leds
         chmod +x ./target/linux/rockchip/armv8/base-files/etc/board.d/02_network
+         
+    - name: Speed Up
+      uses: klever1988/cachewrtbuild@main
+      with:
+        ccache: 'true'
+        prefix: ${{ github.workspace }}/openwrt
         
     - name: Update Feeds
       id: update
