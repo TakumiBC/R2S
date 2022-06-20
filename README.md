@@ -1,5 +1,3 @@
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fthomaswcy%2FR2S.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fthomaswcy%2FR2S?ref=badge_shield)
-
 ```
     
   ____        _     _ _   __        __    _   
