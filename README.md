@@ -33,3 +33,7 @@
 --------------------------------------------------------------------------------------------------------------------------------
 - Telegram群组：https://t.me/RubikWrtChat/
 - Telegram频道：https://t.me/RubikWrt/
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fthomaswcy%2FR2S.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fthomaswcy%2FR2S?ref=badge_large)
